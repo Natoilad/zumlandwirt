@@ -663,17 +663,19 @@ a:hover {
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
+  right: 0;
   bottom: 15px;
-  left: 15px;
+  left: 0;
   padding: 10px 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   overflow-y: auto;
   transition: 0.3s;
 }
 
 .navbar-mobile > ul > li {
   padding: 0;
+  background-color: #fff;
+  border-top: 1px solid #b0adad;
 }
 
 .navbar-mobile a:hover:before,
@@ -686,13 +688,13 @@ a:hover {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #4e4e4e;
+  color: #264f0e;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #0078ff;
+  color: #d5ceaf;
 }
 
 .navbar-mobile .getstarted,
@@ -1252,6 +1254,11 @@ a:hover {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
+
+#blog {
+  background-color: #666;
+  color: #fff;
+}
 @media (min-width: 767px) {
   .card-blog {
     margin-bottom: 3rem;
@@ -1498,4 +1505,19 @@ footer .credits a {
 
 .nav-link {
   color: #264f0e;
+}
+
+.bottom_container {
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.cookie_container {
+  width: 300px;
+  background-color: #fff;
+  background-image: url(../img/google_map_placeholder.png);
+  padding: 20px;
 }
