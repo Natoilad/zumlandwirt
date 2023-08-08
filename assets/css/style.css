@@ -1544,3 +1544,39 @@ footer .credits a {
     width: 25% !important;
   }
 }
+
+.activ {
+  opacity: 0.15;
+}
+
+.hiden {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.hofwirt_img {
+  margin-bottom: 20px;
+}
+
+.obstbauer_img {
+  margin-bottom: 20px;
+}
+
+.universal_container {
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+.obstbauer_container_text {
+  @media (min-width: 1024px) {
+    width: 59%;
+  }
+}
+
+.obstbauer_container_img {
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
+}
