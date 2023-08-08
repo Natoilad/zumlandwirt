@@ -331,27 +331,29 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0078ff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+  background: #000000;
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #fff;
   transition: all 0.4s;
+  opacity: 0.8;
 }
 
 .back-to-top i {
-  font-size: 28px;
-  color: #fff;
+  font-size: 40px;
+  color: #909090;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #298eff;
+  background: #000000;
   color: #fff;
 }
 
 .back-to-top.active {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 /*------/ Prelaoder /------*/
@@ -964,7 +966,7 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #fff;
+  /* background: transparent; */
 }
 
 .work-box:hover img {
@@ -1474,10 +1476,11 @@ a:hover {
 # Footer
 --------------------------------------------------------------*/
 footer {
+  margin-top: -1px;
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #666;
 }
 
 footer .copyright {
@@ -1520,4 +1523,24 @@ footer .credits a {
   background-color: #fff;
   background-image: url(../img/google_map_placeholder.png);
   padding: 20px;
+}
+
+.uber_text_container {
+  text-align: start;
+}
+
+@media (min-width: 480px) {
+  .col-md-4 {
+    width: 50% !important;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-4 {
+    width: 33.333% !important;
+  }
+}
+@media (min-width: 1024px) {
+  .col-md-4 {
+    width: 25% !important;
+  }
 }

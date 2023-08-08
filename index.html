@@ -64,14 +64,22 @@
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
-      <div class="container d-flex align-items-center justify-content-end">
+      <div
+        class="container d-flex align-items-center justify-content-end fix_header"
+      >
         <!-- <h1 class="logo"><a href="index.html">DevFolio</a></h1> -->
 
         <nav id="navbar" class="navbar">
           <ul class="mobile_header">
-            <li><a class="nav-link scrollto active" href="#">Start</a></li>
-            <li><a class="nav-link scrollto" href="#">Über uns</a></li>
-            <li><a class="nav-link scrollto" href="#">Galerie</a></li>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">Start</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="über-uns.html">Über uns</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="galerie.html">Galerie</a>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -99,10 +107,14 @@
             style="list-style: none; padding: 0"
             class="d-flex gap-3 justify-content-center"
           >
-            <li><a class="nav-link scrollto active" href="#hero">Start</a></li>
-            <li><a class="nav-link scrollto" href="#about">Über uns</a></li>
             <li>
-              <a class="nav-link scrollto" href="#services">Galerie</a>
+              <a class="nav-link scrollto active" href="./index.html">Start</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="über-uns.html">Über uns</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="galerie.html">Galerie</a>
             </li>
           </ul>
           <div class="d-flex justify-content-between">
@@ -138,6 +150,7 @@
               width="100%"
               height="400px"
               ="0"
+              loading="lazy"
             ></iframe>
             <p>Grill Sommerpause</p>
             <p>von Mai bis September kein</p>
@@ -196,8 +209,11 @@
             ><i class="bi bi bi-facebook"></i> Mit Facebook verbinden</a
           >
           <a href="#"><img src="./assets/img/system.png" alt="system" /></a>
-          pPOS powered by ORDERSPRINTER Cloudless Kassensystem Webbased und das
-          völlig kostenfrei.
+          <p>
+            POS powered by ORDERSPRINTER Cloudless Kassensystem Webbased und das
+            völlig kostenfrei.
+          </p>
+
           <ul class="d-flex">
             <li><a href="#">Impressum</a></li>
             <li><a href="#">Datenschutz</a></li>
