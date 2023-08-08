@@ -1,11 +1,3 @@
-/**
-* Template Name: DevFolio
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -184,7 +176,7 @@ a:hover {
 }
 
 .title-left:before {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   background-color: #0078ff;
@@ -375,7 +367,7 @@ a:hover {
 }
 
 #preloader:before {
-  content: "";
+  content: '';
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
@@ -536,7 +528,7 @@ a:hover {
 }
 
 .navbar > ul > li > a:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
@@ -843,7 +835,7 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  /* height: 700px; */
 }
 .about-mf .box-shadow-full {
   background-image: url(../img/bg.jpg);
@@ -1202,7 +1194,7 @@ a:hover {
 }
 
 .php-email-form .loading:before {
-  content: "";
+  content: '';
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -1234,7 +1226,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-.php-email-form button[type="submit"] {
+.php-email-form button[type='submit'] {
   background: #0078ff;
   border: 0;
   padding: 10px 24px;
@@ -1242,7 +1234,7 @@ a:hover {
   transition: 0.4s;
 }
 
-.php-email-form button[type="submit"]:hover {
+.php-email-form button[type='submit']:hover {
   background: #3393ff;
 }
 
@@ -1436,7 +1428,7 @@ a:hover {
 
 .widget-sidebar .list-sidebar li:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 10px;
   height: 1px;
   left: 0;
@@ -1495,4 +1487,10 @@ footer .credits a {
 .hero_contet {
   flex-direction: column;
   /* align-items: center; */
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 920px;
+  }
 }
