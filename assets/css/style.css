@@ -835,9 +835,9 @@ a:hover {
 --------------------------------------------------------------*/
 
 #about {
-  background: fixed;
+  /* background: fixed; */
   background-image: url(../img/bg.jpg);
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1581,4 +1581,29 @@ footer .credits a {
   @media (min-width: 1024px) {
     width: 40%;
   }
+}
+
+.fixed-bg-section {
+  position: relative;
+  overflow: hidden; /* Запобігти прокрутці всередині цієї секції */
+}
+
+.fixed-bg-section::before {
+  content: '';
+  position: absolute; /* Абсолютне позиціонування відносно свого батька, тобто .fixed-bg-section */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: url('../img/bg.jpg'); /* Ваше фонове зображення */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1; /* Забезпечує те, що вміст завжди буде зверху над фоновим зображенням */
 }
