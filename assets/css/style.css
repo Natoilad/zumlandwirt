@@ -14,6 +14,10 @@ h5,
 h6 {
   color: #1e1e1e;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
 
 a {
   color: #1e1e1e;
@@ -1580,5 +1584,13 @@ footer .credits a {
 .obstbauer_container_img {
   @media (min-width: 1024px) {
     width: 40%;
+  }
+}
+
+.hofwirt_obstbauer_container {
+  display: block;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -1,0 +1,3 @@
+Sitemap: https://nalad.com.ua/gasthaus
+User-agent: *
+Allow: https://nalad.com.ua/gasthaus/
