@@ -80,9 +80,10 @@ a:hover {
 
 .bg-image {
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
-  background-position: center center;
+  /* background-position: center; */
+  background-position: fixed;
 }
 
 @media (max-width: 1024px) {
@@ -834,8 +835,9 @@ a:hover {
 --------------------------------------------------------------*/
 
 #about {
+  background: fixed;
   background-image: url(../img/bg.jpg);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
