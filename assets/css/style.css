@@ -339,7 +339,7 @@ a:hover {
   width: 42px;
   height: 42px;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #b4b1b1;
   transition: all 0.4s;
   opacity: 0.8;
 }
@@ -461,13 +461,13 @@ a:hover {
   padding: 10px 0;
   position: relative;
 }
-.header {
+/* .header {
   opacity: 0.9;
   background-color: rgba(213, 206, 175, 0.9);
   @media (min-width: 991px) {
     opacity: 0.3;
   }
-}
+} */
 
 #header .logo {
   font-size: 28px;
@@ -530,7 +530,6 @@ a:hover {
   transition: 0.3s;
   letter-spacing: 0.4px;
   position: relative;
-  text-transform: uppercase;
 }
 
 .navbar a i,
@@ -1677,7 +1676,7 @@ footer .credits a {
   }
 }
 .footer_facebook_link {
-  height: 40px;
+  height: 100%;
   background-color: #4267b2;
   color: #fff;
   padding: 5px;
@@ -1702,4 +1701,10 @@ footer .credits a {
     flex-direction: row;
     align-items: start;
   }
+}
+
+.nav_font {
+  font-family: 'Bad Script', cursive, google;
+  font-size: 16px !important;
+  font-style: normal !important;
 }
