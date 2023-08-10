@@ -342,7 +342,6 @@ a:hover {
   border: 1px solid #b4b1b1;
   transition: all 0.4s;
   opacity: 0.8;
-  z-index: 999;
 }
 
 .back-to-top i {
@@ -661,7 +660,7 @@ a:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(78, 78, 78, 0.7);
+  background: rgba(78, 78, 78, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -1270,7 +1269,7 @@ a:hover {
 # Blog
 --------------------------------------------------------------*/
 
-#bog {
+#blog {
   background-color: #666;
   color: #fff;
   padding: 10px;
@@ -1634,7 +1633,7 @@ footer .credits a {
   /* padding-top: 10px; */
   font-weight: bold;
   font-style: normal;
-  color: #000 !important;
+  color: #000;
   font-family: 'Bad Script', cursive, 'google';
   text-transform: none;
   text-align: center;
