@@ -1266,7 +1266,7 @@ a:hover {
 #blog {
   background-color: #666;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 @media (min-width: 767px) {
   .card-blog {
@@ -1487,6 +1487,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
+  padding-top: 0;
   background: #666;
 }
 
@@ -1526,9 +1527,19 @@ footer .credits a {
 }
 
 .cookie_container {
-  width: 300px;
-  background-color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 2000px inset;
+  color: white;
+  height: 400px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+
   background-image: url(../img/google_map_placeholder.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px;
 }
 
@@ -1560,6 +1571,11 @@ footer .credits a {
   display: none;
   @media (min-width: 991px) {
     display: flex;
+    font-family: 'Bad Script', cursive, 'google';
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
   }
 }
 
@@ -1644,4 +1660,12 @@ footer .credits a {
 .offnungszeiten_text {
   padding-left: 30px;
   font-size: 16px;
+}
+
+.blog_container_content {
+  padding: 10px;
+  margin-bottom: 10px;
+  @media (min-width: 991px) {
+    width: 33.3%;
+  }
 }
