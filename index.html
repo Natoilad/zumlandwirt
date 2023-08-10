@@ -37,6 +37,8 @@
     <link
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- font -->
@@ -48,7 +50,12 @@
     />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      href="assets/css/style.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
   </head>
 
   <body>
@@ -386,6 +393,6 @@
     ></a>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
