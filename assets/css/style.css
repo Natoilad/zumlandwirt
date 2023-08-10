@@ -450,7 +450,7 @@ a:hover {
 
 .mobile_header {
   opacity: 1;
-  @media (min-width: 1024px) {
+  @media (min-width: 991px) {
     opacity: 0;
   }
 }
@@ -1558,7 +1558,7 @@ footer .credits a {
 
 .hiden {
   display: none;
-  @media (min-width: 1024px) {
+  @media (min-width: 991px) {
     display: flex;
   }
 }
@@ -1592,7 +1592,7 @@ footer .credits a {
   display: block;
   @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -1607,7 +1607,8 @@ footer .credits a {
 }
 
 .hero_title {
-  font-size: 30px;
+  font-size: 45px;
+  /* padding-top: 10px; */
   font-weight: bold;
   font-style: normal;
   color: #000;
