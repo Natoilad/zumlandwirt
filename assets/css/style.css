@@ -1629,11 +1629,15 @@ footer .credits a {
 }
 
 .hero_bottom_container {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .blog_title {
+  font-family: 'Roboto Slab', serif;
   color: #d5ceaf;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .offnungszeiten_text {
