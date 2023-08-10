@@ -1669,3 +1669,18 @@ footer .credits a {
     width: 33.3%;
   }
 }
+.footer_facebook_link {
+  background-color: #4267b2;
+  color: #fff;
+  padding: 5px;
+  display: block;
+  margin-bottom: 20px !important;
+  border-radius: 12px;
+}
+
+.footer_container_link {
+  display: block;
+  @media (min-width: 991px) {
+    /* display: flex; */
+  }
+}
