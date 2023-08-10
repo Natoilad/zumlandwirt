@@ -9,8 +9,6 @@
     <meta content="Gasthaus" name="keywords" />
 
     <!-- Favicons -->
-    <!-- <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
     <link
       rel="apple-touch-icon"
@@ -48,6 +46,14 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -94,7 +100,7 @@
               />
             </a>
 
-            <h1>
+            <h1 class="hero_title">
               <a href="#" class="hero_text"
                 >Herzlich Willkommen bei uns im Gasthaus Zum Landwirt</a
               >
@@ -116,7 +122,7 @@
           </ul>
           <div class="hofwirt_obstbauer_container">
             <div>
-              <h2>Hofwirt</h2>
+              <h2 class="hero_part">Hofwirt</h2>
               <a href="./hofwirt.html"
                 ><img
                   src="./assets/img/Hofwirt_img.jpg"
@@ -124,14 +130,19 @@
                   alt="Hofwirt"
                   loading="lazy"
               /></a>
-
-              <p>Essen und trinken</p>
-              <p>in bäuerlich - schwäbischer Wirtshaus Tradition</p>
-              <p>Vom rustikalen Vesper mit selbstgebackenem Brot</p>
-              <p>bis zur festlichen Tafel</p>
+              <div class="hofwirt_text_container">
+                <p class="hofwirt_text">Essen und trinken</p>
+                <p class="hofwirt_text">
+                  in bäuerlich - schwäbischer Wirtshaus Tradition
+                </p>
+                <p class="hofwirt_text">
+                  Vom rustikalen Vesper mit selbstgebackenem Brot
+                </p>
+                <p class="hofwirt_text">bis zur festlichen Tafel</p>
+              </div>
             </div>
             <div>
-              <h2>Obstbauer</h2>
+              <h2 class="hero_part">Obstbauer</h2>
               <a href="./obstbauer.html">
                 <img
                   src="./assets/img/Obstbauer_img.jpg"
@@ -139,21 +150,30 @@
                   alt="Obstbauer"
                   loading="lazy"
               /></a>
-
-              <p>Most und Fruchtsäfte aus eigener Herstellung</p>
+              <div class="hofwirt_text_container">
+                <p class="hofwirt_text">
+                  Most und Fruchtsäfte aus eigener Herstellung
+                </p>
+              </div>
             </div>
           </div>
           <div>
-            <iframe
+            <!-- <iframe
               src="//app.resmio.com/gasthaus-zum-landwirt-2/widget?source=www.zumlandwirt.biz&resourceGroup=&resourceGroupName=&backgroundColor=%23555555&color=%23ffffff&linkBackgroundColor=%2307a7c4&commentsDisabled=false&newsletterSubscribe=&facebookLogin=true&newsletterSignup=true&name=&email=&phone=&comment=&nextAvailability=&fontSize=18"
               width="100%"
               height="400"
               ="0"
               loading="lazy"
-            ></iframe>
-            <p>Grill Sommerpause</p>
-            <p>von Mai bis September kein</p>
-            <p>Mittwoch‘s Grillabend</p>
+            ></iframe> -->
+            <div class="hero_bottom_container">
+              <p class="hero_bottom_container_text" style="color: #ff0000">
+                Grill Sommerpause
+              </p>
+              <p class="hero_bottom_container_text">
+                von Mai bis September kein
+              </p>
+              <p class="hero_bottom_container_text">Mittwoch‘s Grillabend</p>
+            </div>
           </div>
         </div>
       </section>
@@ -163,21 +183,43 @@
       <section id="blog" class="blog-mf sect-pt4 route">
         <div class="container d-flex bottom_container">
           <div>
-            <h3>Öffnungszeiten</h3>
-            <p>Sa. 12.08.23 Geschlossen</p>
-            <p>18.09.23 - 11.10.23 Geschlossen</p>
-            <p>Montag + Dienstag Ruhetag</p>
-            <p>
-              Mittwoch bis Samstag 16.00 - 22.30 Uhr Sonntag 11.30 - 14.00 Uhr
+            <h3 class="blog_title">Öffnungszeiten</h3>
+            <p class="offnungszeiten_text">
+              Sa. 12.08.23 <br />
+              Geschlossen
             </p>
-            <p>
-              Warme Küche: Mittwoch bis Samstag 17.00 - 21.00 Uhr Sonntag 11.30
-              - 14.00 Uhr
+            <p class="offnungszeiten_text">
+              18.09.23 - 11.10.23 <br />
+              Geschlossen
             </p>
-            pGrill Sommerpause von Mai bis September kein Mittwoch‘s Grillabend
+            <p class="offnungszeiten_text">
+              Montag + Dienstag <br />
+              Ruhetag
+            </p>
+            <p class="offnungszeiten_text">
+              Mittwoch bis Samstag <br />
+              16.00 - 22.30 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Sonntag <br />
+              11.30 - 14.00 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Warme Küche: <br />
+              Mittwoch bis Samstag <br />
+              17.00 - 21.00 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Sonntag <br />
+              11.30 - 14.00 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Grill Sommerpause <br />
+              von Mai bis September kein <br />Mittwoch‘s Grillabend
+            </p>
           </div>
           <div>
-            <h3>so finden Sie uns</h3>
+            <h3 class="blog_title">so finden Sie uns</h3>
             <p>Argentalstraße 41 88069 Tettnang- Laimnau</p>
             <div class="cookie_container">
               <p style="color: #000">
@@ -190,7 +232,7 @@
             </div>
           </div>
           <div>
-            <h3>so erreichen Sie uns</h3>
+            <h3 class="blog_title">so erreichen Sie uns</h3>
             <a href="tel:075436967">Tel: 0 75 43 69 67 </a>
             <p>Email:</p>
             <a href="mailto:info@zumlandwirt.de">info@zumlandwirt.de</a>
