@@ -809,3 +809,31 @@ footer {
   font-size: 16px !important;
   font-style: normal !important;
 }
+
+.Was_title {
+  font-family: 'Bad Script', cursive, 'google';
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #68a94a;
+}
+.privacy_title {
+  font-family: 'Roboto Slab', serif, 'google';
+  font-size: 45px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-transform: none;
+  color: #367714;
+}
+
+.sitemap_title {
+  font-family: 'Roboto Slab', serif, 'google';
+  font-size: 45px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-transform: none;
+  color: #367714;
+}
