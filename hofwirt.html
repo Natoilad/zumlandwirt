@@ -3,15 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>Zumlandwirt</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
+    <meta content="Gasthaus Zum Landwirt" name="description" />
+    <meta content="Gasthaus" name="keywords" />
+    <title>Hofwirt - Gasthaus Zum Landwirt</title>
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -43,11 +38,14 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -55,18 +53,26 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container d-flex align-items-center justify-content-end">
-        <!-- <h1 class="logo"><a href="index.html">DevFolio</a></h1> -->
-
+    <header id="header" class="fixed-top header">
+      <div
+        style="height: 28px"
+        class="container d-flex align-items-center justify-content-end fix_header"
+      >
+        <!-- .navbar -->
         <nav id="navbar" class="navbar">
           <ul class="mobile_header">
-            <li><a class="nav-link scrollto" href="index.html">Start</a></li>
             <li>
-              <a class="nav-link scrollto" href="über-uns.html">Über uns</a>
+              <a class="nav-link scrollto nav_font" href="index.html">Start</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="galerie.html">Galerie</a>
+              <a class="nav-link scrollto nav_font" href="über-uns.html"
+                >Über uns</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto nav_font" href="galerie.html"
+                >Galerie</a
+              >
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -80,16 +86,29 @@
       <!-- ======= About Section ======= -->
       <section id="about" class="about-mf sect-pt4 route">
         <div class="container pt-5 text-center">
+          <!-- LOGO AND TITLE -->
           <div
-            class="d-flex gap-5 flex-column align-items-center mb-5 hero_contet"
+            class="d-flex gap-4 flex-column align-items-center mb-5 hero_contet"
           >
-            <a href="#">
-              <img src="./assets/img/logo.png" alt="logo" />
+            <a href="/">
+              <img
+                src="./assets/img/logo.png"
+                width="237"
+                height="300"
+                alt="logo"
+                loading="lazy"
+              />
             </a>
-            <a class="hero_text"
-              >Herzlich Willkommen bei uns im Gasthaus Zum Landwirt</a
-            >
+
+            <h1 class="hero_title">
+              <a style="color: #000 !important" href="/" class="hero_text"
+                >Herzlich Willkommen bei uns im Gasthaus Zum Landwirt</a
+              >
+            </h1>
           </div>
+          <!-- LOGO AND TITLE -->
+
+          <!-- Desktop menu -->
           <ul
             style="list-style: none; padding: 0"
             class="gap-3 justify-content-center hiden"
@@ -104,6 +123,7 @@
               <a class="nav-link scrollto" href="galerie.html">Galerie</a>
             </li>
           </ul>
+          <!-- Desktop menu -->
           <div>
             <div>
               <h4>Essen und trinken</h4>
@@ -158,38 +178,92 @@
       <!-- Blog Section -->
       <section id="blog" class="blog-mf sect-pt4 route">
         <div class="container d-flex bottom_container">
-          <div>
-            <h3>Öffnungszeiten</h3>
-            <p>Sa. 12.08.23 Geschlossen</p>
-            <p>18.09.23 - 11.10.23 Geschlossen</p>
-            <p>Montag + Dienstag Ruhetag</p>
-            <p>
-              Mittwoch bis Samstag 16.00 - 22.30 Uhr Sonntag 11.30 - 14.00 Uhr
+          <div class="blog_container_content">
+            <h3 class="blog_title">Öffnungszeiten</h3>
+            <p class="offnungszeiten_text">
+              Sa. 12.08.23 <br />
+              Geschlossen
             </p>
-            <p>
-              Warme Küche: Mittwoch bis Samstag 17.00 - 21.00 Uhr Sonntag 11.30
-              - 14.00 Uhr
+            <p class="offnungszeiten_text">
+              18.09.23 - 11.10.23 <br />
+              Geschlossen
             </p>
-            pGrill Sommerpause von Mai bis September kein Mittwoch‘s Grillabend
+            <p class="offnungszeiten_text">
+              Montag + Dienstag <br />
+              Ruhetag
+            </p>
+            <p class="offnungszeiten_text">
+              Mittwoch bis Samstag <br />
+              16.00 - 22.30 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Sonntag <br />
+              11.30 - 14.00 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Warme Küche: <br />
+              Mittwoch bis Samstag <br />
+              17.00 - 21.00 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Sonntag <br />
+              11.30 - 14.00 Uhr
+            </p>
+            <p class="offnungszeiten_text">
+              Grill Sommerpause <br />
+              von Mai bis September kein <br />Mittwoch‘s Grillabend
+            </p>
           </div>
-          <div>
-            <h3>so finden Sie uns</h3>
-            <p>Argentalstraße 41 88069 Tettnang- Laimnau</p>
-            <div class="cookie_container">
-              <p style="color: #000">
+          <div class="blog_container_content">
+            <h3 class="blog_title">so finden Sie uns</h3>
+
+            <a
+              style="
+                color: rgb(153, 153, 153);
+
+                font-family: Open Sans, sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+              "
+              href="https://www.google.de/maps/place/Zum+Landwirt/@47.6379019,9.6327196,17z/data=!3m1!4b1!4m6!3m5!1s0x479b086228dd4d4f:0xbe245920370af118!8m2!3d47.6379019!4d9.6327196!16s%2Fg%2F1tjxdmrb?entry=ttu"
+              target="_blank"
+              >Argentalstraße 41 <br />
+              88069 Tettnang- Laimnau</a
+            >
+
+            <div style="margin-top: 20px" class="cookie_container">
+              <p>
                 Inhalte von Google Maps werden aufgrund deiner aktuellen
                 Cookie-Einstellungen nicht angezeigt. Klicke auf die
-                Cookie-Richtlinie (Funktionell), um den Cookie-Richtlinien von
-                Google Maps zuzustimmen und den Inhalt anzusehen. Mehr dazu
-                erfährst du in der Google Maps Datenschutzerklärung.
+                <a style="color: #d5ceaf" href="#">Cookie-Richtlinie </a
+                >(Funktionell), um den Cookie-Richtlinien von Google Maps
+                zuzustimmen und den Inhalt anzusehen. Mehr dazu erfährst du in
+                der Google Maps
+                <a
+                  style="color: #d5ceaf"
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  >Datenschutzerklärung.</a
+                >
               </p>
             </div>
           </div>
-          <div>
-            <h3>so erreichen Sie uns</h3>
-            <a href="tel:075436967">Tel: 0 75 43 69 67 </a>
-            <p>Email:</p>
-            <a href="mailto:info@zumlandwirt.de">info@zumlandwirt.de</a>
+          <div class="blog_container_content">
+            <h3 class="blog_title">so erreichen Sie uns</h3>
+            <a style="color: #fff" href="tel:075436967">Tel: 0 75 43 69 67 </a>
+            <p style="margin-top: 20px">Email:</p>
+            <a
+              style="
+                color: rgb(153, 153, 153);
+                font-family: Open Sans, sans-serif;
+                font-size: 16px;
+                border-bottom: 1px solid #fff;
+                padding-bottom: 5px;
+                display: block;
+              "
+              href="mailto:info@zumlandwirt.de"
+              >info@zumlandwirt.de</a
+            >
           </div>
         </div>
       </section>
@@ -200,25 +274,94 @@
     <!-- ======= Footer ======= -->
     <footer>
       <div class="container">
-        <div>
-          <a href=""
-            ><i class="bi bi bi-facebook"></i> Mit Facebook verbinden</a
-          >
-          <a href="#"
-            ><img src="./assets/img/system.jpg" alt="system" width="200px"
-          /></a>
-          <p>
-            POS powered by ORDERSPRINTER Cloudless Kassensystem Webbased und das
-            völlig kostenfrei.
-          </p>
-
-          <ul class="d-flex flex-wrap gap-4">
-            <li><a href="about.html">Impressum</a></li>
-            <li><a href="privacy.html">Datenschutz</a></li>
-            <li><a href="#">Cookie-Richtlinie</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-          </ul>
+        <div class="">
+          <div class="footer_container_link">
+            <a
+              style="font-size: 11px"
+              class="footer_facebook_link"
+              href="https://www.facebook.com/profile.php?id=100063471225044&ref=embed_page"
+              target="_blank"
+              ><i class="bi bi bi-facebook"></i> Mit Facebook verbinden</a
+            >
+            <div class="footer_container">
+              <a href="https://www.ordersprinter.de/" target="_blank"
+                ><img
+                  src="./assets/img/system.jpg"
+                  width="200"
+                  height="130"
+                  alt="system"
+                  loading="lazy"
+                  style="margin-bottom: 20px"
+              /></a>
+              <p style="font-size: 16px; text-align: start; padding: 5px">
+                POS powered by ORDERSPRINTER <br />
+                Cloudless Kassensystem Webbased und da
+                <br />
+                völlig kostenfrei.
+              </p>
+            </div>
+          </div>
         </div>
+        <ul
+          style="
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+            font-size: 12px;
+            list-style: none;
+            color: #d5ceaf !important;
+          "
+          class="d-flex flex-wrap"
+        >
+          <li>
+            <a
+              style="
+                color: #d5ceaf !important;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+              padding-right:10px
+              href="about.html"
+              >Impressum</a
+            >
+          </li>
+          <li>
+            <a
+              style="
+                color: #d5ceaf !important;
+                border-left: 2px solid#bababa;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+              href="privacy.html"
+              >Datenschutz</a
+            >
+          </li>
+          <li>
+            <a
+              style="
+                color: #d5ceaf !important;
+                border-left: 2px solid#bababa;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+              href="#"
+              >Cookie-Richtlinie</a
+            >
+          </li>
+          <li>
+            <a
+              style="
+                color: #d5ceaf !important;
+                border-left: 2px solid#bababa;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+              href="sitemap.html"
+              >Sitemap</a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
     <!-- End  Footer -->
