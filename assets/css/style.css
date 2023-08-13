@@ -837,3 +837,66 @@ footer {
   text-transform: none;
   color: #367714;
 }
+
+/* Booking Modal */
+#stickyBtn {
+  position: fixed;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  font-family: 'Bad Script', cursive, google;
+  font-size: 16px !important;
+  font-style: normal !important;
+}
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  padding-top: 0;
+  width: 90%;
+  max-width: 900px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  margin-right: -15px;
+}
+
+.vertical-text-btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: #68a94a;
+  color: white;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vertical-text-btn:hover {
+  background-color: #45a049;
+}
+/* Booking Modal */
