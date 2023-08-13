@@ -8,12 +8,10 @@ btn.onclick = function () {
 
 closeBtn.onclick = function () {
   modal.style.display = 'none';
-  modalContent.style.transform = 'translateY(-100%)';
 };
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = 'none';
-    modalContent.style.transform = 'translateY(-100%)';
   }
 };
