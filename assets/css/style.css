@@ -850,6 +850,7 @@ footer {
   font-family: 'Bad Script', cursive, google;
   font-size: 16px !important;
   font-style: normal !important;
+  border-radius: 4px;
 }
 
 .modal {
