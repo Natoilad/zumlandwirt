@@ -903,3 +903,62 @@ footer {
   background-color: #45a049;
 }
 /* Booking Modal */
+
+/* Cookie-Richtlinie */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(156, 156, 156, 0.5);
+}
+.cookieRichtlinie {
+  text-align: justify;
+  display: none;
+  color: rgb(105, 108, 118);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  max-width: 360px;
+  padding: 16px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 9991;
+  border-radius: 4px;
+}
+
+.cookieRichtlinie_title {
+  color: rgb(105, 108, 118);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cookieRichtlinie_btn {
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: solid 2px #cacedb;
+  background-color: #fff;
+  color: #696c76;
+  text-overflow: ellipsis;
+  margin-top: 50px;
+  color: #fff;
+  background-color: rgb(27, 169, 225);
+  border-bottom-color: rgb(202, 206, 219);
+}
+
+.cookie_btn {
+  background: transparent;
+  border: none;
+  border-left: 2px solid#bababa;
+}
+/* Cookie-Richtlinie */
