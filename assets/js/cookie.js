@@ -20,10 +20,10 @@ const setCookie = (name, value, days) => {
   console.log('hello');
 };
 cookieBtn.onclick = function () {
+  setCookie('cookie', 'cookie', 30); //30days
   cookieRichtlinie.style.display = 'none';
 };
 cookie_btn.onclick = function () {
   cookieRichtlinie.style.display = 'block';
 };
 getCookies();
-setCookie('cookie', 'cookie', 30); //30days
