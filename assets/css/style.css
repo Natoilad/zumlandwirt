@@ -962,3 +962,25 @@ footer {
   border-left: 2px solid#bababa;
 }
 /* Cookie-Richtlinie */
+
+/* fmb */
+.first_modal_btn {
+  background-color: rgb(70, 160, 73);
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 4px;
+  float: inherit;
+  margin-bottom: -3px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .first_modal_btn {
+    font-size: 16px;
+  }
+}
+.first_modal_btn:hover {
+  background-color: rgb(103, 169, 74);
+}
