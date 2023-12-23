@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#stickyNotification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00ff00; /* Зелений колір для вільного стану */
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+
+#stickyNotification.busy {
+  background-color: #ffcc00; /* Жовтий колір для стану середньої завантаженості */
+}
+
+#stickyNotification.full {
+  background-color: #ff0000; /* Червоний колір для стану повної завантаженості */
+}
+
+#loadingPlaceholder {
+  height: 2000px; /* Встановлюємо велику висоту для того, щоб спричинити завантаження */
+}

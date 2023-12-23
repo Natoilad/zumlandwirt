@@ -984,3 +984,23 @@ footer {
 .first_modal_btn:hover {
   background-color: rgb(103, 169, 74);
 }
+
+.prodinfo img {
+  display: none;
+}
+.prodtable {
+  margin: 0 auto;
+}
+.prodprice {
+  text-align: end;
+}
+
+.hidden {
+  display: none;
+}
+.btn_wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

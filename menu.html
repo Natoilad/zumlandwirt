@@ -27,8 +27,16 @@
         justify-content: space-between;
       }
     </style>
+    <link rel="stylesheet" href="./assets/css/notif.css" />
   </head>
   <body>
+    <!-- stickyNotification -->
+    <div id="stickyNotification" class="free">
+      <span id="notificationText">Вільно</span>
+    </div>
+
+    <!-- Placeholder for simulating loading -->
+    <!-- <div id="loadingPlaceholder"></div> -->
     <div class="menu_wrapper">
       <div class="btn_wrapper">
         <button onclick="showFood()">Show Food Prices</button>
@@ -112,6 +120,7 @@
             .catch(error => console.error('Error loading content:', error));
         });
       </script>
+      <script src="./assets/js/notif.js"></script>
     </div>
   </body>
 </html>
