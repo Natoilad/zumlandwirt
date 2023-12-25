@@ -1,4 +1,0 @@
-<tr class='prodtableentry'>
-    <td class='prodinfo'>{PRODUCTIMG} {PRODUCTNAME}
-    <td class='prodprice'>{PRODUCTPRICE}<br><p>{PRODUCTDESCRIPTION}
-</tr>

@@ -1,8 +1,0 @@
-<div class="prodcard">
-  {PRODUCTIMG}
-  <div class="prodcontainer">
-    <h4><b>{PRODUCTNAME}</b></h4> 
-    <p>{PRODUCTPRICE}</p>
-    <p>{PRODUCTDESCRIPTION}</p> 
-  </div>
-</div>
