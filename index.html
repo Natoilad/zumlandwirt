@@ -51,14 +51,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" async />
-    <link rel="stylesheet" href="./assets/css/notif.css" />
-
-    <style>
-      th:nth-child(2) {
-        text-align: end;
-        /* Додаткові стилі за необхідності */
-      }
-    </style>
   </head>
 
   <body>
@@ -952,24 +944,12 @@
 
     <!-- Menu Modal -->
     <button
-      style="margin-top: 70px"
+      style="margin-top: 70px; min-width: 36px; border-radius: 4px"
       title="Online Reservieren"
       id="menuBtn"
       class="vertical-text-btn"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M21 15H3M21 9H3M21 3H3"></path>
-      </svg>
+      <i class="bi-menu-up"></i>
     </button>
 
     <div id="menuModal" style="display: none" class="modal">
@@ -982,10 +962,10 @@
 
         <div class="btn_wrapper">
           <button class="close first_modal_btn resimoBtn" onclick="showFood()">
-            Show Food Prices
+            Food
           </button>
           <button class="close first_modal_btn resimoBtn" onclick="showDrink()">
-            Show Drink Prices
+            Drink
           </button>
         </div>
         <div id="foodPrice"></div>
@@ -1003,19 +983,12 @@
       });
     </script>
 
-    <!-- menu MODAL -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer>
-      $(document).ready(function () {
-        $('.dynamic_content').load('./menu.html');
-      });
-    </script> -->
-    <script defer src="./assets/js/bookingMadal.js"></script>
-    <script defer src="./assets/js/cookie.js"></script>
+    <script defer src="./assets/js/firstModalWindow.min.js"></script>
+    <script defer src="./assets/js/cookie.min.js"></script>
+    <script defer src="./assets/js/bookingMadal.min.js"></script>
     <script defer src="assets/js/main.js"></script>
-    <script defer src="./assets/js/firstModalWindow.js"></script>
-    <script defer src="./assets/js/menuMadal.js"></script>
-    <script defer src="./assets/js/menuQuery.js"></script>
+    <script defer src="./assets/js/menuQuery.min.js"></script>
+    <script defer src="./assets/js/menuMadal.min.js"></script>
     <script src="./assets/js/notif.js"></script>
   </body>
 </html>

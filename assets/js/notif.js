@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
   const stickyNotification = document.getElementById('stickyNotification');
-  const loadingPlaceholder = document.getElementById('loadingPlaceholder');
+  // const loadingPlaceholder = document.getElementById('loadingPlaceholder');
+  window.addEventListener('scroll', function () {
+    // Коли прокручено до кінця сторінки
+    if (
+      window.scrollY + window.innerHeight >=
+      document.documentElement.scrollHeight
+    ) {
+      stickyNotification.style.opacity = '0';
+    } else {
+      stickyNotification.style.opacity = '0.8';
+    }
+  });
 
   // Моделюємо завантаження через певний час
   setTimeout(function () {
