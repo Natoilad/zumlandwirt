@@ -14,7 +14,6 @@ function showSections(sectionIds, targetElementIds) {
     .then(data => {
       var tempContainer = document.createElement('div');
       tempContainer.innerHTML = data;
-
       for (var i = 0; i < sectionIds.length; i++) {
         var sectionContent = tempContainer.querySelector('#' + sectionIds[i]);
         var targetElement = document.getElementById(targetElementIds[i]);
