@@ -178,7 +178,7 @@
               loading="lazy"
               title="Widget for Gasthaus Zum Landwirt"
             ></iframe>
-            <div class="hero_bottom_container">
+<!--            <div class="hero_bottom_container">
               <p class="hero_bottom_container_text" style="color: #ff0000">
                 Grill Sommerpause
               </p>
@@ -186,7 +186,7 @@
                 von Mai bis September kein
               </p>
               <p class="hero_bottom_container_text">Mittwoch‘s Grillabend</p>
-            </div>
+            </div>-->
           </div>
           <!-- Content page -->
         </div>
@@ -458,18 +458,19 @@
           <div class="blog_container_content">
             <h3 class="blog_title">Öffnungszeiten</h3>
             <p class="offnungszeiten_text">
-              Sa. 12.08.23 <br />
-              Geschlossen
+              an folgenden Tagen haben wir Geschlossen
             </p>
             <p class="offnungszeiten_text">
-              18.09.23 - 11.10.23 <br />
-              Geschlossen
+              24./25./26.12 <br />
+              31.12 <br />
+              01.01.24-08.01.24
             </p>
             <p class="offnungszeiten_text">
+              an folgenden Tagen haben wir Ruhetag <br />
               Montag + Dienstag <br />
-              Ruhetag
             </p>
             <p class="offnungszeiten_text">
+              an folgenden Tagen haben wir Geöffnet <br />
               Mittwoch bis Samstag <br />
               16.00 - 22.30 Uhr
             </p>
@@ -486,10 +487,7 @@
               Sonntag <br />
               11.30 - 14.00 Uhr
             </p>
-            <p class="offnungszeiten_text">
-              Grill Sommerpause <br />
-              von Mai bis September kein <br />Mittwoch‘s Grillabend
-            </p>
+            <p class="offnungszeiten_text"></p>
           </div>
           <div class="blog_container_content">
             <h3 class="blog_title">so finden Sie uns</h3>
@@ -677,11 +675,6 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
-
-    <!-- stickyNotification -->
-    <div id="stickyNotification" class="free">
-      <span id="notificationText">Geringe Wartezeit</span>
-    </div>
 
     <!-- first Modal_window -->
     <div id="modal" style="display: none" class="modal">
@@ -942,48 +935,6 @@
       </div>
     </div>
 
-    <!-- Menu Modal -->
-    <button
-      style="margin-top: 70px; min-width: 36px; border-radius: 4px"
-      title="Online Reservieren"
-      id="menuBtn"
-      class="vertical-text-btn"
-    >
-      <i class="bi-menu-up"></i>
-    </button>
-
-    <div id="menuModal" style="display: none" class="modal">
-      <div class="modal-content">
-        <span
-          ><button class="close close-button closeBtn" type="button">
-            ×
-          </button></span
-        >
-
-        <div class="btn_wrapper">
-          <button
-            id="foodBtn"
-            class="close first_modal_btn resimoBtn"
-            onclick="showFood()"
-          >
-            Food
-          </button>
-          <button
-            id="drinkBtn"
-            class="close first_modal_btn resimoBtn"
-            onclick="showDrink()"
-          >
-            Drink
-          </button>
-        </div>
-
-        <div id="foodPrice"></div>
-        <div style="display: none" id="drinkPrice"></div>
-      </div>
-    </div>
-
-    <!-- Menu Modal END -->
-
     <!-- FIRST MODAL -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer>
@@ -991,14 +942,9 @@
         $('.dynamic_content').load('./popup.html');
       });
     </script>
-
-    <script defer src="./assets/js/modals.js"></script>
-    <script defer src="./assets/js/firstModalWindow.js"></script>
     <script defer src="./assets/js/bookingMadal.js"></script>
-    <script defer src="./assets/js/menuMadal.js"></script>
-    <script defer src="./assets/js/menuQuery.min.js"></script>
-    <script defer src="./assets/js/cookie.min.js"></script>
+    <script defer src="./assets/js/cookie.js"></script>
     <script defer src="assets/js/main.js"></script>
-    <script src="./assets/js/notif.min.js"></script>
+    <script defer src="./assets/js/firstModalWindow.js"></script>
   </body>
 </html>

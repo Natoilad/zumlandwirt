@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const stickyNotification = document.getElementById('stickyNotification');
-  // const loadingPlaceholder = document.getElementById('loadingPlaceholder');
   window.addEventListener('scroll', function () {
-    // Коли прокручено до кінця сторінки
     if (
       window.scrollY + window.innerHeight >=
       document.documentElement.scrollHeight
@@ -12,13 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
       stickyNotification.style.opacity = '0.8';
     }
   });
-  // Моделюємо завантаження через певний час
   setTimeout(function () {
     updateNotification('busy');
     setTimeout(function () {
       updateNotification('full');
-    }, 3000); // Затримка для ефекту
-  }, 3000); // Затримка для ефекту
+    }, 3000);
+  }, 3000);
   function updateNotification(status) {
     stickyNotification.classList.remove('free', 'busy', 'full');
     stickyNotification.classList.add(status);

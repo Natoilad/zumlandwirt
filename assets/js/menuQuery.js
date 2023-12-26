@@ -16,6 +16,7 @@ function showDrink() {
 
 function showSections(sectionIds, targetElementIds) {
   var pageUrl = '/zumlandwirt.html';
+  // var pageUrl = 'http://showroom.zumlandwirt.biz/php/drinks.php';
   fetch(pageUrl)
     .then(response => response.text())
     .then(data => {
