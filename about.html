@@ -48,7 +48,8 @@
     />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" async />
+    <link rel="stylesheet" href="./assets/css/main.css" async />
   </head>
 
   <body>
@@ -693,9 +694,55 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
+    <!-- Menu Modal -->
+    <button
+      style="margin-top: 70px; min-width: 36px; border-radius: 4px"
+      title="Online Reservieren"
+      id="menuBtn"
+      class="vertical-text-btn"
+    >
+      <i class="bi-menu-up"></i>
+    </button>
+
+    <div id="menuModal" style="display: none" class="modal">
+      <div class="modal-content">
+        <span
+          ><button class="close close-button closeBtn" type="button">
+            ×
+          </button></span
+        >
+
+        <div class="btn_wrapper">
+          <button
+            id="foodBtn"
+            class="close first_modal_btn resimoBtn"
+            onclick="showFood()"
+          >
+            Food
+          </button>
+          <button
+            id="drinkBtn"
+            class="close first_modal_btn resimoBtn"
+            onclick="showDrink()"
+          >
+            Drink
+          </button>
+        </div>
+
+        <div id="foodPrice"></div>
+        <div style="display: none" id="drinkPrice"></div>
+      </div>
+    </div>
+
+    <!-- Menu Modal END -->
+
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="./assets/js/bookingMadal.js"></script>
-    <script src="assets/js/cookie.js"></script>
+    <script defer src="./assets/js/modals.min.js"></script>
+    <script defer src="./assets/js/firstModalWindow.js"></script>
+    <script defer src="./assets/js/bookingMadal.js"></script>
+    <script defer src="./assets/js/menuMadal.js"></script>
+    <script defer src="./assets/js/menuQuery.min.js"></script>
+    <script defer src="./assets/js/cookie.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
   </body>
 </html>

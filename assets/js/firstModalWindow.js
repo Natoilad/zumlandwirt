@@ -20,12 +20,4 @@ window.onload = function () {
       resimoContainer.style.display = 'block';
     }
   });
-
-  // window.onclick = function (event) {
-  //   console.log(event);
-
-  //   if (event.target == modal) {
-  //     modal.style.display = 'none';
-  //   }
-  // };
 };
