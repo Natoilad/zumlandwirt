@@ -874,7 +874,7 @@ footer {
 
 #foodPrice,
 #drinkPrice {
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: auto;
 }
 .close {
@@ -998,7 +998,7 @@ footer {
 .prodtable {
   width: 100%;
   margin: 0 auto;
-  max-height: 600px;
+  max-height: 500px;
   overflow-y: auto;
 }
 .prodprice {
