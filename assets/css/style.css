@@ -871,6 +871,12 @@ footer {
   width: 90%;
   max-width: 900px;
 }
+
+#foodPrice,
+#drinkPrice {
+  max-height: 500px;
+  overflow-y: auto;
+}
 .close {
   color: #aaa;
   float: right;
@@ -983,6 +989,7 @@ footer {
 }
 .first_modal_btn:hover {
   background-color: rgb(103, 169, 74);
+  /* background-color: #00ff00; */
 }
 
 .prodinfo img {
@@ -991,9 +998,12 @@ footer {
 .prodtable {
   width: 100%;
   margin: 0 auto;
+  max-height: 600px;
+  overflow-y: auto;
 }
 .prodprice {
   text-align: end;
+  padding-right: 15px;
 }
 
 .hidden {
@@ -1004,6 +1014,9 @@ footer {
   gap: 10px;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+#foodBtn {
+  margin-right: 10px;
 }
 
 /* NOTIF */
@@ -1031,6 +1044,7 @@ footer {
 }
 th:nth-child(2) {
   text-align: end;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1039,3 +1053,8 @@ th:nth-child(2) {
   }
 }
 /* NOTIF END */
+
+.btn_wrapper {
+  position: sticky;
+  top: 44px;
+}

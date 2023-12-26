@@ -21,9 +21,11 @@ window.onload = function () {
     }
   });
 
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  };
+  // window.onclick = function (event) {
+  //   console.log(event);
+
+  //   if (event.target == modal) {
+  //     modal.style.display = 'none';
+  //   }
+  // };
 };

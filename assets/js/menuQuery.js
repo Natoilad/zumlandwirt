@@ -1,10 +1,17 @@
 function showFood() {
   document.getElementById('foodPrice').style.display = 'block';
   document.getElementById('drinkPrice').style.display = 'none';
+  document.getElementById('foodBtn').style.backgroundColor =
+    'rgb(103, 169, 74)';
+  document.getElementById('drinkBtn').style.backgroundColor =
+    'rgb(70, 160, 73)';
 }
 function showDrink() {
   document.getElementById('drinkPrice').style.display = 'block';
   document.getElementById('foodPrice').style.display = 'none';
+  document.getElementById('drinkBtn').style.backgroundColor =
+    'rgb(103, 169, 74)';
+  document.getElementById('foodBtn').style.backgroundColor = 'rgb(70, 160, 73)';
 }
 
 function showSections(sectionIds, targetElementIds) {

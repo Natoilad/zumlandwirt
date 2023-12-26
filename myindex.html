@@ -961,15 +961,26 @@
         >
 
         <div class="btn_wrapper">
-          <button class="close first_modal_btn resimoBtn" onclick="showFood()">
+          <button
+            id="foodBtn"
+            class="close first_modal_btn resimoBtn"
+            onclick="showFood()"
+          >
             Food
           </button>
-          <button class="close first_modal_btn resimoBtn" onclick="showDrink()">
+          <button
+            id="drinkBtn"
+            class="close first_modal_btn resimoBtn"
+            onclick="showDrink()"
+          >
             Drink
           </button>
         </div>
+
         <div id="foodPrice"></div>
-        <div style="display: none" id="drinkPrice"></div>
+        <div style="display: none" id="drinkPrice">
+          <div id="drinks"><?php include "php/drinks.php"; ?></div>
+        </div>
       </div>
     </div>
 
@@ -983,12 +994,13 @@
       });
     </script>
 
-    <script defer src="./assets/js/firstModalWindow.min.js"></script>
-    <script defer src="./assets/js/cookie.min.js"></script>
-    <script defer src="./assets/js/bookingMadal.min.js"></script>
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="./assets/js/modals.js"></script>
+    <script defer src="./assets/js/firstModalWindow.js"></script>
+    <script defer src="./assets/js/bookingMadal.js"></script>
+    <script defer src="./assets/js/menuMadal.js"></script>
     <script defer src="./assets/js/menuQuery.min.js"></script>
-    <script defer src="./assets/js/menuMadal.min.js"></script>
-    <script src="./assets/js/notif.js"></script>
+    <script defer src="./assets/js/cookie.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script src="./assets/js/notif.min.js"></script>
   </body>
 </html>
