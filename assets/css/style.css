@@ -777,7 +777,7 @@ footer {
 
 #foodPrice,
 #drinkPrice {
-  max-height: 450px;
+  max-height: 400px;
   overflow-y: auto;
 }
 .close {
