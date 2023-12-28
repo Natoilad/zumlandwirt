@@ -32,6 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
   setTimeout(function () {
-    updateNotification('free');
+    updateNotification('busy');
   }, 9000);
 });
