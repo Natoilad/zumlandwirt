@@ -4,7 +4,7 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
-  font-family: 'Abel', sans-serif, 'google';
+  font-family: "Abel", sans-serif, "google";
   /* font-size: 20px; */
   font-size: 18px;
   font-weight: 600;
@@ -73,21 +73,20 @@ a:hover {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 2px;
-  bottom: 2px;
+  right: 0;
+  bottom: 0;
   z-index: 996;
-  background: #000000;
-  width: 42px;
-  height: 42px;
+  background: #68a94b;
+  width: 37px;
+  height: 37px;
   border-radius: 5px;
-  border: 1px solid #b4b1b1;
   transition: all 0.4s;
   opacity: 0.8;
 }
 
 .back-to-top i {
   font-size: 40px;
-  color: #909090;
+  color: #fff;
   line-height: 0;
 }
 
@@ -115,7 +114,7 @@ a:hover {
 }
 
 #preloader:before {
-  content: '';
+  content: "";
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
@@ -235,7 +234,7 @@ a:hover {
 }
 
 .navbar > ul > li > a:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -533,7 +532,7 @@ a:hover {
 
 .widget-sidebar .list-sidebar li:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 10px;
   height: 1px;
   left: 0;
@@ -603,7 +602,7 @@ footer {
   color: white;
   height: 400px;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 
   background-image: url(../img/google_map_placeholder.jpg);
@@ -640,7 +639,7 @@ footer {
 .hero_part {
   font-size: 22px;
   color: #68a94a;
-  font-family: 'Bad Script', cursive, 'google';
+  font-family: "Bad Script", cursive, "google";
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -652,13 +651,13 @@ footer {
   font-weight: bold;
   font-style: normal;
   color: #000;
-  font-family: 'Bad Script', cursive, 'google';
+  font-family: "Bad Script", cursive, "google";
   text-transform: none;
   text-align: center;
 }
 
 .hofwirt_text_container {
-  font-family: 'Abel', sans-serif, 'google' !important;
+  font-family: "Abel", sans-serif, "google" !important;
   font-size: 15px;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -674,7 +673,7 @@ footer {
 }
 
 .blog_title {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   color: #d5ceaf;
   font-size: 26px;
   font-style: normal;
@@ -711,13 +710,13 @@ footer {
 }
 
 .nav_font {
-  font-family: 'Bad Script', cursive, google;
+  font-family: "Bad Script", cursive, google;
   font-size: 16px !important;
   font-style: normal !important;
 }
 
 .Was_title {
-  font-family: 'Bad Script', cursive, 'google';
+  font-family: "Bad Script", cursive, "google";
   font-size: 36px;
   font-weight: bold;
   font-style: normal;
@@ -725,7 +724,7 @@ footer {
   color: #68a94a;
 }
 .privacy_title {
-  font-family: 'Roboto Slab', serif, 'google';
+  font-family: "Roboto Slab", serif, "google";
   font-weight: normal;
   font-style: normal;
   text-align: center;
@@ -734,7 +733,7 @@ footer {
 }
 
 .sitemap_title {
-  font-family: 'Roboto Slab', serif, 'google';
+  font-family: "Roboto Slab", serif, "google";
   font-size: 45px;
   font-weight: normal;
   font-style: normal;
@@ -750,7 +749,7 @@ footer {
   z-index: 99;
   display: flex;
   align-items: center;
-  font-family: 'Bad Script', cursive, google;
+  font-family: "Bad Script", cursive, google;
   font-size: 16px !important;
   font-style: normal !important;
   border-radius: 4px;
@@ -920,23 +919,22 @@ footer {
 
 /* NOTIF */
 #stickyNotification {
-  opacity: 0.8;
-  position: fixed;
+  display: flex;
+  justify-content: center;
   bottom: 0;
   left: 0;
-  width: 100%;
-  background-color: #00ff00;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   color: #fff;
   font-weight: bold;
   transition: background-color 0.5s ease;
 }
-#stickyNotification.busy {
-  background-color: #ffcc00;
+#notificationText {
+  color: #fff;
+  text-transform: uppercase;
 }
-#stickyNotification.full {
-  background-color: #ff0000;
+#stickyNotification .square {
+  zoom: 0.3;
 }
 #loadingPlaceholder {
   height: 2000px;
@@ -944,6 +942,50 @@ footer {
 th:nth-child(2) {
   text-align: end;
   padding-right: 10px;
+}
+#drinkscomment {
+  display: none;
+}
+#loading {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #666666dd;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  width: 40px;
+  height: 70px;
+  margin: 10px;
+  float: left;
+  background-size: cover;
+}
+.green-square {
+  background-image: url(../img/green_icon.svg);
+}
+.yellow-square {
+  background-image: url(../img//yellow.svg);
+}
+.red-square {
+  background-image: url(../img//red_icon.svg);
+}
+.white-square {
+  background-image: url(../img//white_icon.svg);
+}
+@media (max-width: 768px) {
+  #stickyNotification.square {
+    zoom: 0.3;
+  }
+  #notificationText {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  #loading {
+    justify-content: flex-start;
+  }
 }
 
 /* NOTIF END */
@@ -1002,7 +1044,7 @@ th:nth-child(2) {
 @media (min-width: 991px) {
   .hiden {
     display: flex;
-    font-family: 'Bad Script', cursive, 'google';
+    font-family: "Bad Script", cursive, "google";
     font-size: 24px;
     font-weight: bold;
     font-style: normal;

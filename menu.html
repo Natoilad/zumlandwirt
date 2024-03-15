@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Load Section from Another Page</title>
+  </head>
+  <body>
+    <!-- Placeholder for the loaded content -->
+    <div id="loadedContent"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Id of the section you want to load
+        var sectionId = 'foods';
+
+        // Path to the page containing the section
+        var pageUrl = 'http://showroom.zumlandwirt.biz';
+
+        // Construct the full URL
+        var fullUrl = pageUrl + ' #' + sectionId;
+
+        // Use fetch to load the content
+        fetch(fullUrl)
+          .then(response => response.text())
+          .then(data => {
+            // Inject the loaded content into the placeholder
+            document.getElementById('loadedContent').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading content:', error));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<svg width="60" height="100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="20" r="20" fill="#fff"/> <!-- Kopf -->
+  <rect x="20" y="40" width="20" height="60" fill="#fff"/> <!-- Körper -->
+  <rect x="5" y="40" width="10" height="40" fill="#fff"/> <!-- Arm links -->
+  <rect x="45" y="40" width="10" height="40" fill="#fff"/> <!-- Arm rechts -->
+</svg>
